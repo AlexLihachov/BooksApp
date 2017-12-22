@@ -1,0 +1,14 @@
+<div class="col s6 m6">
+  <div class="card horizontal hoverable">
+    <div class="card-stacked">
+      <div class="card-content">
+        <a [routerLink]="['/books', book.title ]"
+        >{{ book.title }}</a>
+      </div>
+      <div class="card-action">
+        <span>Author:</span>
+        <a [routerLink]="['/authors', book.author]" class="green-text text-darken-4">{{ book.author }}</a>
+      </div>
+    </div>
+  </div>
+</div>

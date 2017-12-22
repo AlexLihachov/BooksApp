@@ -1,0 +1,11 @@
+<div class="row">
+  <h4 class="center-align">{{name}}</h4>
+  <p>{{biography}}</p>
+  <p><i class="material-icons">book</i> Author's books:</p>
+  <ul *ngFor="let b of books">
+    <li><a class="green-text text-darken-4" [routerLink]="['/books', b.title ]">{{ b.title }}</a></li>
+  </ul>
+</div>
+
+
+
